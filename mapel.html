@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Pelajaran - CLASSX.TKJ_ONLY</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://files.catbox.moe/lg6zpm.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #000080;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 25px;
+      color: #1E90FF;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 10px;
+    }
+    .hari {
+      position: relative;
+      background-color: rgba(255,255,255,0.7);
+      border-radius: 20px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      text-align: left;
+    }
+    .hari:hover {
+      transform: scale(1.05);
+    }
+    .hari h2 {
+      color: #1E90FF;
+      margin-bottom: 5px;
+    }
+    .hari ul {
+      list-style: none;
+      padding-left: 15px;
+    }
+    .hari li::before {
+      content: "📘 ";
+    }
+    .ikon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 25px;
+      height: 25px;
+      opacity: 0.8;
+    }
+    button {
+      background-color: #ADD8E6;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      margin-bottom: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #000080;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #87CEFA;
+    }
+  </style>
+</head>
+<body>
+  <h1>Jadwal Pelajaran Kelas X TKJ</h1>
+  <div class="grid">
+    <div class="hari"><img class="ikon" src="https://img.icons8.com/ios-filled/50/000080/calendar.png"/><h2>Senin</h2><ul><li>Ipas</li><li>PJOK</li><li>Bahasa Inggris</li></ul></div>
+    <div class="hari"><img class="ikon" src="https://img.icons8.com/ios-filled/50/000080/calendar.png"/><h2>Selasa</h2><ul><li>Bahasa Lampung</li><li>DPK TKJ</li><li>Bahasa Inggris</li></ul></div>
+    <div class="hari"><img class="ikon" src="https://img.icons8.com/ios-filled/50/000080/calendar.png"/><h2>Rabu</h2><ul><li>Matematika</li><li>Ipas</li><li>DPK TKJ</li></ul></div>
+    <div class="hari"><img class="ikon" src="https://img.icons8.com/ios-filled/50/000080/calendar.png"/><h2>Kamis</h2><ul><li>Pai</li><li>DPK TKJ</li><li>Bahasa Indonesia</li></ul></div>
+    <div class="hari"><img class="ikon" src="https://img.icons8.com/ios-filled/50/000080/calendar.png"/><h2>Jumat</h2><ul><li>Matematika</li><li>Bahasa Indonesia</li><li>Sejarah Islam</li></ul></div>
+    <div class="hari"><img class="ikon" src="https://img.icons8.com/ios-filled/50/000080/calendar.png"/><h2>Sabtu</h2><ul><li>SBK</li><li>Informatika</li><li>PKN</li></ul></div>
+  </div>
+  <button onclick="window.location.href='index.html'">Kembali ke Beranda</button>
+</body>
+</html>
